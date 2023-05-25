@@ -93,5 +93,16 @@ tours.forEach((tour) => {
   toursContainer.appendChild(tourCard);
 });
 
+var prevScrollpos = window.pageYOffset;
 
-  
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos || currentScrollPos === 0) {
+    // При прокрутке страницы вверх или когда страница находится в самом верху
+    document.querySelector(".header").classList.add("visible");
+  } else {
+    // При прокрутке страницы вниз
+    document.querySelector(".header").classList.remove("visible");
+  }
+  prevScrollpos = currentScrollPos;
+};
