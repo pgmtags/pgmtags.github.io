@@ -1,6 +1,6 @@
 # pgmtags.github.io
 
-## I made changes to my friend's project without her direct involvement because she wanted to do the project herself. However, she didn't object to my corrections.
+## I made changes to my friend's project [*her site*](https://github.com/opasaskek/fold/tree/master) without her direct involvement because she wanted to do the project herself. However, she didn't object to my corrections.
 ## However, she didn't object to my corrections.
 
 List of changes:
