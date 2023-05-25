@@ -1,3 +1,7 @@
+window.onload = function() {
+  document.querySelector(".header").classList.add("visible");
+};
+
 const tours = [
     {
       image: 'bali.jpg',
@@ -87,6 +91,7 @@ const createTourCard = (tour) => {
 
   return tourCard;
 };
+
 
 tours.forEach((tour) => {
   const tourCard = createTourCard(tour);

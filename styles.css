@@ -40,7 +40,6 @@
 * {
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -49,10 +48,6 @@
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Non-prefixed version, currently
                                     not supported by any browser */
-}
-
-.main {
-    padding-top: -1em;
 }
 
 html {
@@ -66,9 +61,9 @@ body {
     flex-direction: column;
     min-height: 100%;
     height: 100%;
-    font-family: 'Arial', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .header {
@@ -79,15 +74,21 @@ body {
     flex: 0 0 10%;
     border-color: #ffffff;
     border-width: 2px;
-    font-family: 'Comfortaa', cursive;
+    border-bottom: 0.05em solid rgb(133, 133, 133);
     text-shadow: rgba(75, 75, 75, 0.575) 0px 0px 0.05em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Плавный переход бордюра */
     position: fixed;
     left: 0;
     top: -60px;
     width: 100%;
     background-color: #f1f1f1;
     transition: top 0.3s ease-in-out;
+    z-index: 9999;
 }
+
+.header:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Более яркий бордюр при наведении */
+  }
 
 .header.visible {
     top: 0em;
@@ -95,7 +96,7 @@ body {
 
 .header__title {
     color: #000000;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .header__nav {
@@ -134,7 +135,7 @@ body {
 }
 
 .section__title {
-    font-size: 1.5em;
+    font-size: 2.2em;
     color: #ffffff;
     margin-bottom: 20px;
     text-shadow: rgba(75, 75, 75, 0.356) 5px 2px;
@@ -142,6 +143,7 @@ body {
 
 .section__content {
     display: flex;
+    font-size: 1.1em;
     gap: 100px;
     align-items: center;
     justify-content: center;
@@ -161,7 +163,6 @@ body {
 .section-3 {
     background-image: url('image3.jpg');
 }
-
 
 .section__list {
     list-style: none;
@@ -206,6 +207,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #f0f2f5;
     animation: slide-up 0.8s ease-out both;
+    margin-bottom: 0.7em;
 }
 
 
