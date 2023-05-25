@@ -7,5 +7,5 @@ List of changes:
 * added animations to the appearance of cards and images
 * added shadows under some of the text
 * added dynamic nav panel
-* change font
+* change font and size
 ###### I hope that when she reads it, she won't be angry with me.😅
