@@ -4,49 +4,49 @@ window.onload = function() {
 
 const tours = [
     {
-      image: 'bali.jpg',
+      image: 'photos/bali.jpg',
       title: 'Mystical Bali Adventure',
       description: 'Explore the enchanting island of Bali, with its lush jungles, vibrant culture...',
       buttonText: 'Buy Tour'
     },
     {
-      image: 'tokyo.jpg',
+      image: 'photos/tokyo.jpg',
       title: 'Futuristic Tokyo Odyssey',
       description: 'Discover the captivating blend of tradition and innovation in Tokyo...',
       buttonText: 'Buy Tour'
     },
     {
-      image: 'African_safari.jpg',
+      image: 'photos/African_safari.jpg',
       title: 'Majestic African Safari',
       description: 'Embark on a thrilling journey through the African wilderness...',
       buttonText: 'Buy Tour'
     },
     {
-      image: 'Rio_Carnival.jpg',
+      image: 'photos/Rio_Carnival.jpg',
       title: 'Vibrant Rio de Janeiro Carnival',
       description: "Experience the energy and excitement of Rio de Janeiro's world-famous Carnival...",
       buttonText: 'Buy Tour'
     },
     {
-      image: 'Alaska.jpg',
+      image: 'photos/Alaska.jpg',
       title: 'Alaskan Wilderness Expedition',
       description: 'Immerse yourself in the rugged beauty of Alaska, a land of towering mountains...',
       buttonText: 'Buy Tour'
     },
     {
-      image: 'Egypt_pyramids.jpg',
+      image: 'photos/Egypt_pyramids.jpg',
       title: 'Enigmatic Egyptian Odyssey',
       description: 'Uncover the mysteries of ancient Egypt, from the iconic pyramids and Sphinx...',
       buttonText: 'Buy Tour'
     },
     {
-      image: 'Machu_Picchu.jpg',
+      image: 'photos/Machu_Picchu.jpg',
       title: 'Mystical Machu Picchu Trek',
       description: "Venture deep into the heart of the Andes, where you'll uncover the ancient secrets of Machu Picchu...",
       buttonText: 'Buy Tour'
     },
     {
-      image: 'New_Zealand.jpg',
+      image: 'photos/New_Zealand.jpg',
       title: 'Scenic New Zealand Adventure',
       description: 'Traverse the stunning landscapes of New Zealand, from the lush rainforests and pristine beaches...',
       buttonText: 'Buy Tour'

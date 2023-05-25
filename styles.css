@@ -153,15 +153,15 @@ body {
 }
 
 .section-1 {
-    background-image: url('image1.jpg');
+    background-image: url('photos/image1.jpg');
 }
 
 .section-2 {
-    background-image: url('image2.jpg');
+    background-image: url('photos/image2.jpg');
 }
 
 .section-3 {
-    background-image: url('image3.jpg');
+    background-image: url('photos/image3.jpg');
 }
 
 .section__list {
