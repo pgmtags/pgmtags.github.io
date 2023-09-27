@@ -1,52 +1,51 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-* {
+/* Reset and base styles */
+body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently
-                                    not supported by any browser */
-}
-
-body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-family: 'Manrope', sans-serif;
-    font-size: 24px;
+    font-size: 1.5vw;
     display: flex;
-    color: #333;
+    color: #ffffffea;
     flex-direction: column;
-    min-height: 100%;
     height: 100%;
     line-height: 1.42857143;
-    
     background-color: #fff;
 }
 
+/* Header styles */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
+    padding-right: 5%;
+    padding-left: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    color: #000000af;
 }
 
 .header:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Более яркий бордюр при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header__title {
-    color: #000000;
-    font-size: 1.7rem;
-}   
+    font-size: 1.7vw;
+}
 
+/* Navigation styles */
 .header__nav {
     display: flex;
 }
@@ -57,7 +56,7 @@ body {
 }
 
 .header__nav-link:hover {
-    color: #4f627e;
+    color: #00000091;
 }
 
 .header__nav-item {
@@ -70,8 +69,10 @@ body {
     transition: color 0.3s;
 }
 
+/* Section styles */
 .section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -83,18 +84,17 @@ body {
 }
 
 .section__title {
-    font-size: 1.4em;
-    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
     margin-bottom: 20px;
     text-shadow: rgba(75, 75, 75, 0.356) 5px 2px;
 }
 
 .section__content {
-    font-size: 1.1em;
-    gap: 100px;
+    font-size: 2vw;
+    object-fit: cover;
     align-items: center;
     justify-content: center;
-    width: 80%;
     text-align: center;
     text-shadow: rgba(75, 75, 75, 0.575) 0px 0px 3px;
 }
@@ -114,11 +114,11 @@ body {
 .section__list {
     list-style: none;
     font-size: 0.8em;
-    color: #ffffff;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
+/* Section button styles */
 .section__button {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -139,7 +139,6 @@ body {
 .section__button:hover {
     background-color: #23c483;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
     transform: translateY(-7px);
 }
 
@@ -147,58 +146,60 @@ body {
     transform: translateY(-1px);
 }
 
+/* Tour cards styles */
 .tour-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1vw;
+    color: black;
 }
 
 .tour-card {
-    flex: 1 1 calc(25% - 2rem);
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 1rem;
-    padding: 1rem;
+    width: auto;
+    height: auto;
+    flex: 1 1 calc(25% - 2vw);
+    margin: 0 1vw;
+    padding: 1vw;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #f0f2f5;
     animation: slide-up 0.5s ease-out both;
-    animation-duration: 1s;
     animation-fill-mode: both;
-    margin-bottom: 0.7em;
-    border: 2px solid #c3c6ce;
+    margin-bottom: 0.7vw;
+    border: 2px solid #00000007;
 }
 
 .tour-card__image {
     width: 100%;
-    height: auto; /* Adjusted to maintain aspect ratio */
+    height: 450px;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
     border-radius: 20px;
 }
 
 .tour-card__title {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5vw;
 }
 
 .tour-card__description {
     line-height: 1.4;
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
     flex-grow: 1;
+    color: rgba(0, 0, 0, 0.685);
 }
 
 .tour-card__buttons {
     display: flex;
+    width: auto;
+    height: auto;
     justify-content: space-between;
 }
 
 .tour-card__button {
-    width: 110px;
-    height: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -222,48 +223,33 @@ body {
 .tour-card__button:hover {
     background-color: #e68d09;
     box-shadow: 0px 15px 20px #d38716;
-    color: #fff;
     transform: translateY(-7px);
 }
 
+/* Footer styles */
 .footer {
     display: flex;
     justify-content: center;
-    background-color: #34495e;
-    height: 35px;
 }
 
-.footer__text {
-    color: #ffffff63;
-}
-
+/* Image styles */
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border-radius: 5px;
+    margin-bottom: 1vw;
+    border-radius: 20px;
     animation-name: Appearance;
     animation-duration: 0.5s;
-    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
 }
 
-@-webkit-keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-o-keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-moz-keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
+/* Animation keyframes */
 @keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
+
 @keyframes slide-up {
     0% {
       opacity: 0;
@@ -272,5 +258,18 @@ img {
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .tour-card {
+        flex: 1 1 calc(50% - 2vw);
+    }
+}
+
+@media (max-width: 576px) {
+    .tour-card {
+        flex: 1 1 100%;
     }
 }
