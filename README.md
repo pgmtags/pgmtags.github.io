@@ -7,8 +7,10 @@ List of changes:
   * transferred the card information to js format
 
 * Design:
+  * adaptive design  ( maybe :3 )
   * added shadows under the text
   * change size & font
   * change design cards
   * added animations
+  * blured, dimmed images
 ###### I hope that when she reads it, she won't be angry with me.😅
