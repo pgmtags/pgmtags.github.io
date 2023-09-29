@@ -83,3 +83,4 @@ tours.forEach((tour) => {
   const tourCard = createTourCard(tour);
   toursContainer.appendChild(tourCard);
 });
+
