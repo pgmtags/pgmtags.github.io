@@ -1,58 +1,74 @@
-/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-/* Reset and base styles */
 body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.5vw;
-    display: flex;
-    color: #ffffffea;
-    flex-direction: column;
-    height: 100%;
-    line-height: 1.42857143;
-    background-color: #fff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5vw;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  height: 100%;
+  line-height: 1.43;
+  background-color: #fff;
 }
 
-/* Header styles */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5%;
-    padding-left: 5%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    color: #000000af;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  box-shadow: 0 2px 4px rgba(0,0,0.1);
+  z-index: 1000;
+  color: #000;  
 }
 
 .header:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0.1);
 }
 
 .header__title {
-    font-size: 1.7vw;
+  font-size: 1.7vw; 
 }
 
-/* Navigation styles */
 .header__nav {
-    display: flex;
+  display: flex;
 }
 
 .header__nav-list {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;  
+}
+
+.header__nav-link:hover {
+  color: #000;
+}
+
+.header__nav-item {
+  margin-left: 25px;  
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 0 0 14px #000;
 }
 
 .header__nav-link:hover {
@@ -75,13 +91,14 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    a`lign-items: center;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 0px 0 14px black;
 }
+
 
 .section__title {
     font-family: 'Montserrat', sans-serif;
